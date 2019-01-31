@@ -7,7 +7,6 @@ artifacts:
     path: SilentStreamBugFix\bin\$(configuration)\SilentStreamBugFix.exe
 deploy:
   provider: GitHub
-  draft: true
   artifact: executable
   tag: $(APPVEYOR_REPO_TAG_NAME)
   description: 'Release $(APPVEYOR_REPO_TAG_NAME)'
