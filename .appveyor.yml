@@ -1,4 +1,10 @@
+image:
+  - Visual Studio 2017
+build:
+  verbosity: minimal
 deploy:
   provider: GitHub
   draft: true
   description: 'Release 1.0.0'
+  auth_token:
+    secure: dvOTTIWM4jQpigNFM+RpDRNvMee/t5gkG4j8LRL+EkxIStGulXZsr0tamQIPzb+t
