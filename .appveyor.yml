@@ -2,9 +2,13 @@ image:
   - Visual Studio 2017
 build:
   verbosity: minimal
+artifacts:
+  - name: executable
+    path: bin\$(configuration)\*.exe
 deploy:
   provider: GitHub
   draft: true
   description: 'Release 1.0.0'
+  artifact: executable
   auth_token:
     secure: dvOTTIWM4jQpigNFM+RpDRNvMee/t5gkG4j8LRL+EkxIStGulXZsr0tamQIPzb+t
