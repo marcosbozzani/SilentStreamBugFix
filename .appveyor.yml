@@ -13,3 +13,5 @@ deploy:
   release: SilentStreamBugFix-v1.0.0
   auth_token:
     secure: dvOTTIWM4jQpigNFM+RpDRNvMee/t5gkG4j8LRL+EkxIStGulXZsr0tamQIPzb+t
+  on:
+    APPVEYOR_REPO_TAG: true
