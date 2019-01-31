@@ -1,6 +1,8 @@
 # SilentStreamBugFix
 Fixes no short sounds and cut off in the beginning of sounds when using HDMI audio
 
+[![Build status](https://ci.appveyor.com/api/projects/status/we00wktavpt841ej?svg=true)](https://ci.appveyor.com/project/marcosbozzani/silentstreambugfix)
+
 ## Information about the bug
 https://community.amd.com/thread/185767
 
