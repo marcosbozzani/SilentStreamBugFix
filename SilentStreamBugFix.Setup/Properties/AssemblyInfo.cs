@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription(ProductInfo.Description)]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany(ProductInfo.Company)]
-[assembly: AssemblyProduct(ProductInfo.FullName + "(Setup)")]
+[assembly: AssemblyProduct(ProductInfo.FullName + " (Setup)")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -161,7 +161,7 @@ namespace SilentStreamBugFix.Setup
 
         public static string ResourcePath(string resourceName)
         {
-            resourceName = resourceName.Substring(Application.ProductName.Length + 1);
+            resourceName = resourceName.Substring(ProductInfo.Name.Length + 1);
             if (resourceName == "App.config")
             {
                 resourceName = ProductInfo.Name + ".exe.config";
