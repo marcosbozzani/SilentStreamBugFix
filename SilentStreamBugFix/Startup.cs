@@ -39,11 +39,11 @@ namespace SilentStreamBugFix
             {
                 if (Enabled)
                 {
-                    key.SetValue(Application.ProductName, Application.ExecutablePath);
+                    key.SetValue(ProductInfo.Name, Application.ExecutablePath);
                 }
                 else
                 {
-                    key.DeleteValue(Application.ProductName, false);
+                    key.DeleteValue(ProductInfo.Name, false);
                 }
             }
         }
