@@ -23,7 +23,8 @@ namespace SilentStreamBugFix
             var logPath = Path.Combine(Application.StartupPath, Application.ProductName + ".log");
             File.AppendAllText(logPath, $"[{DateTime.Now.ToString("o")}] {exception}\r\n");
             var message = $"Error: {exception.Message}\n\nOpen log file?";
-            var result = MessageBox.Show(message, Application.ProductName, MessageBoxButtons.YesNo);
+            var result = MessageBox.Show(message, Application.ProductName, 
+                MessageBoxButtons.YesNo, MessageBoxIcon.Error);
             if (result == DialogResult.Yes)
             {
                 Process.Start(logPath);

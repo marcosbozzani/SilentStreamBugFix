@@ -3,8 +3,8 @@ image:
 configuration:
   - Release
 artifacts:
-  - name: executable
-    path: SilentStreamBugFix\bin\$(configuration)\SilentStreamBugFix.exe
+  - name: installer
+    path: SilentStreamBugFix.Setup\bin\$(configuration)\SilentStreamBugFix.Setup.exe
 deploy:
   provider: GitHub
   artifact: executable

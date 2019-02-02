@@ -7,7 +7,7 @@ namespace SilentStreamBugFix
 {
     public class Program : ApplicationContext
     {
-        static Mutex mutex = new Mutex(true, "{04AD4EDC-3418-486E-AC09-AD91C6297141}");
+        static Mutex mutex = new Mutex(true, ProductInfo.Guid);
 
         [STAThread]
         public static void Main(string[] args)
@@ -18,7 +18,6 @@ namespace SilentStreamBugFix
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
                 ExceptionHandler.Enable();
-                Setup.Install();
                 Application.Run(new Program());
             }
         }

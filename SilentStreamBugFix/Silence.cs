@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
+using System.Windows.Forms;
 
 namespace SilentStreamBugFix
 {
@@ -17,12 +19,13 @@ namespace SilentStreamBugFix
         public Silence()
         {
             var bits = Environment.Is64BitOperatingSystem ? "x64" : "x86";
+            var name = Path.Combine(Application.StartupPath, ($"silence-{bits}.exe"));
 
             process = new Process()
             {
                 StartInfo = new ProcessStartInfo
                 {
-                    FileName = Setup.BasePath($"silence-{bits}.exe"),
+                    FileName = name,
                     CreateNoWindow = true,
                     WindowStyle = ProcessWindowStyle.Hidden,
                 }

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--<Import Project="$(MSBuildThisFileDirectory)\Build.props" />-->
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\SilentStreamBugFix\bin\$(Configuration)\AppIcon.ico" />
+    <EmbeddedResource Include="..\SilentStreamBugFix\bin\$(Configuration)\SilentStreamBugFix.exe" />
+    <EmbeddedResource Include="..\SilentStreamBugFix\bin\$(Configuration)\silence-x64.exe" />
+    <EmbeddedResource Include="..\SilentStreamBugFix\bin\$(Configuration)\silence-x86.exe" />
+  </ItemGroup>
+
+</Project>

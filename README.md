@@ -7,16 +7,15 @@ Fixes no short sounds and cut off in the beginning of sounds when using HDMI aud
 
 - Requirements: [.NET Framework 4.7+](http://go.microsoft.com/fwlink/?LinkId=863262)
 - Download the [latest release](https://github.com/marcosbozzani/SilentStreamBugFix/releases/latest)
-- Run *SilentStreamBugFix.exe*
+- Run ```SilentStreamBugFix.Setup.exe```
 - The program will be installed and started
-- You may delete *SilentStreamBugFix.exe*
 
 ## About
 The program runs in the system tray and by default starts with Windows.
 
 ![System tray](Media/systray.png)
 
-If don't want the program starting with Windows, open the system tray menu by right-clicking the SilentStreamBugFix icon and then uncheck the "Run on system startup". If you think that the fix has stopped working, try the reload action from the same menu.
+If don't want the program starting with Windows, open the system tray menu by right-clicking the SilentStreamBugFix icon and then uncheck the ```Run on system startup```. If you think that the fix has stopped working, try the reload action from the same menu.
 
 ![Application menu](Media/appmenu.png)
 
@@ -40,5 +39,8 @@ https://stackoverflow.com/a/4657392/386091
 
 https://stackoverflow.com/a/9164742/386091
 
-https://stackoverflow.com/a/25276441/25276418/
+https://stackoverflow.com/a/25276441/25276418
 
+https://stackoverflow.com/a/11821952/3079753
+
+https://www.fluxbytes.com/csharp/create-shortcut-programmatically-in-c/
